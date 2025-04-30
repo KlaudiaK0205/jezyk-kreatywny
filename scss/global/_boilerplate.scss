@@ -1,0 +1,35 @@
+@use '../util/' as u;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: var(--c-bg);
+    background: url(/images/tło.jpeg) no-repeat center/cover;
+    color: var(--c-text);
+    min-height: 100vh
+}
+
+.hero {
+    min-height: 80vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

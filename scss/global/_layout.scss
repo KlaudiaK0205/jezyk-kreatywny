@@ -1,0 +1,15 @@
+@use '../util/' as u;
+
+.wrapper {
+    width: min(100% - 40px, u.rem(1180));
+    margin-inline: auto;
+    padding-block: 30px;
+
+    @include u.breakpoint(tablet) {
+        padding-block: 60px;
+    }
+
+    @include u.breakpoint(large) {
+        padding-block: 80px;
+    }
+}
