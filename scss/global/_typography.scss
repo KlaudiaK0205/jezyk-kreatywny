@@ -10,21 +10,22 @@ h6 {
     line-height: 1;
 }
 
-// from 48px(mobile) to 64px (desktop)
 h1 {
-    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(48), u.rem(64));
+    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(32), u.rem(48));
     letter-spacing: 0.05em;
-    text-transform: uppercase;
 }
 
 h2 {
     @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(32), u.rem(40));
     letter-spacing: 0.02em;
-    text-transform: uppercase;
 }
 
-// from 24px(mobile) to 48px (desktop)
 p {
     line-height: 1.5;
     margin: 0;
+}
+
+span {
+    @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(36), u.rem(56));
+    letter-spacing: 0.05em;
 }
